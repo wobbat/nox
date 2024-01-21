@@ -29,13 +29,24 @@
     rustfmt
     rust-analyzer
     clippy
+    neovim
   ];
 
  home.file = {
+    "fish" = {
+      source = ./config/fish;
+      target = "./.config/fish";
+    };
     "starship" = {
-      source = ./.files/starship/.config/starship.toml;
+      source = ./config/starship/starship.toml;
       target = "./.config/starship.toml";
     };
+     "neovim" = {
+      source = ./config/neovim;
+      target = "./.config/neovim"; 
+    };
+    
+
   };
 
 
