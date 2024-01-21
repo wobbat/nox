@@ -1,0 +1,23 @@
+format = '''
+$time $directory
+$character
+'''
+right_format = """$all"""
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+# success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+success_symbol = '[:](bold red)[:](bold green)[:](bold yellow)[:](bold purple)[:](bold blue)'
+error_symbol = '[:](bold red)[:](bold red)[:](bold red)[:](bold red)[:](bold red)'
+
+
+[aws]
+disabled = true
+
+[time]
+disabled = false
+format = '[$time](white bold)'
+# style = 'white bold'
+time_format = '%H:%M'
+
+[directory]
+style = 'white bold'
